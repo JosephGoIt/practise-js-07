@@ -1,5 +1,5 @@
 import { galleryItems } from './gallery-items.js';
-import * as basicLightbox from 'basiclightbox';
+// import * as basicLightbox from 'basiclightbox';
 
 // Create gallery markup
 const gallery = document.querySelector('.gallery');
@@ -23,12 +23,12 @@ galleryItems.forEach(item => {
 });
 
 // Event delegation to open modal
-gallery.addEventListener('click', event => {
-    event.preventDefault(); // Prevent default behavior of anchor tag
+// gallery.addEventListener('click', event => {
+//     event.preventDefault(); // Prevent default behavior of anchor tag
 
-    if (event.target.classList.contains('gallery__image')) {
-      const imageUrl = event.target.dataset.source;
-      const instance = basicLightbox.create(`<img src="${imageUrl}" alt="Image">`);
-      instance.show();
-    }
-  });
+//     if (event.target.classList.contains('gallery__image')) {
+//       const imageUrl = event.target.dataset.source;
+//       const instance = basicLightbox.create(`<img src="${imageUrl}" alt="Image">`);
+//       instance.show();
+//     }
+//   });
